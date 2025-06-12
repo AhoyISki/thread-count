@@ -5,7 +5,7 @@ that crate is archived and no longer works.
 
 [![Crate Version](https://img.shields.io/crates/v/thread-count)](https://crates.io/crates/thread-count)
 [![Documentation](https://docs.rs/thread-count/badge.svg)](https://docs.rs/thread-count)
-[![License](https://img.shields.io/crates/l/thread-count.svg)](./LICENSE-APACHE)
+[![License](https://img.shields.io/crates/l/thread-count.svg)](./LICENSE)
 
 **Get the amount of threads in the current process**
 

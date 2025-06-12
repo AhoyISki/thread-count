@@ -7,11 +7,13 @@ pub(crate) fn thread_count() -> Option<NonZeroUsize> {
         .expect("Failed reading status");
 
     for line in status.split('\n') {
-        if line.to_lowercase().starts_with("threads:") {
-            let new_line = line.replace(' ', "").to_lowercase().replace("threads:", "");
+        let line = line.to_lowercase();
+        if line.starts_with("threads:") {
+            let new_line = line.replace("threads:", "");
 
-            amount =
-                NonZeroUsize::new(new_line.parse::<usize>().expect("Failed parsing into usize"));
+            amount = NonZeroUsize::new(
+                new_line.trim().parse::<usize>().expect("Failed parsing thread count"),
+            );
         }
     }
 

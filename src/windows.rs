@@ -10,7 +10,7 @@ use windows::Win32::System::Diagnostics::ToolHelp::{
     THREADENTRY32,
 };
 
-pub(crate) fn thread_amount() -> Option<NonZeroUsize> {
+pub(crate) fn thread_count() -> Option<NonZeroUsize> {
     let mut amount: usize = 0;
     let pid = process::id();
 

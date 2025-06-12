@@ -1,11 +1,11 @@
 [package]
 name = "thread-count"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "Get the amount of threads in the current process"
-keywords = ["thread", "amount", "process", "number", "current"]
+keywords = ["thread", "count", "process", "number", "current"]
 categories = ["os", "os::windows-apis", "os::unix-apis"]
-repository = "https://github.com/AhoyISki/thread-amount"
+repository = "https://github.com/AhoyISki/thread-count"
 documentation = "https://docs.rs/thread-count"
 authors = ["Tomio <mail@tom1o.space>", "AhoyISki <ahoyiski@gmail.com>"]
 readme = "README.md"

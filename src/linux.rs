@@ -1,7 +1,7 @@
 use std::num::NonZeroUsize;
 use std::{fs, process};
 
-pub(crate) fn thread_amount() -> Option<NonZeroUsize> {
+pub(crate) fn thread_count() -> Option<NonZeroUsize> {
     let mut amount: Option<NonZeroUsize> = None;
     let status = fs::read_to_string(format!("/proc/{}/status", process::id()))
         .expect("Failed reading status");

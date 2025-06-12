@@ -1,5 +1,7 @@
 # Changelog
 
+This is the changelog for [`tread-amount`](https://github.com/jzeuzs/thread-amount)
+
 ## [0.1.3](https://github.com/devtomio/thread-amount/compare/v0.1.2...v0.1.3) (2022-06-24)
 
 

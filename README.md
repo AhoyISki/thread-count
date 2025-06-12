@@ -1,4 +1,4 @@
-# thread-amount
+# thread-count
 
 This is a fork of [`thread-amount`](https://github.com/jzeuzs/thread-amount), since
 that crate is archived and no longer works.
@@ -7,7 +7,7 @@ that crate is archived and no longer works.
 [![Documentation](https://docs.rs/thread-count/badge.svg)](https://docs.rs/thread-count)
 [![License](https://img.shields.io/crates/l/thread-count.svg)](./LICENSE)
 
-**Get the amount of threads in the current process**
+**Get the number of threads in the current process**
 
 ## Example Usage
 
@@ -15,21 +15,21 @@ that crate is archived and no longer works.
 
 ```toml
 [dependencies]
-thread-amount = "0.1"
+thread-count = "0.1"
 ```
 
 The code:
 
 ```rust
-use thread_amount::thread_amount;
+use thread_count::thread_count;
 
 use std::thread;
 
 fn main() {
-    let amount = thread_amount();
+    let count = thread_count();
 
     thread::spawn(move || {
-        assert_eq!(amount.map(NonZeroUsize::get), Some(1))
+        assert_eq!(count.map(NonZeroUsize::get), Some(1))
     });
 }
 ```

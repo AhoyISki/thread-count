@@ -2,6 +2,6 @@
 use std::num::NonZeroUsize;
 
 #[inline]
-pub(crate) fn thread_amount() -> Option<NonZeroUsize> {
+pub(crate) fn thread_count() -> Option<NonZeroUsize> {
     None
 }

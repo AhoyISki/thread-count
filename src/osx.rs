@@ -5,7 +5,7 @@ use mach2::kern_return::KERN_SUCCESS;
 use mach2::task::task_threads;
 use mach2::traps::mach_task_self;
 
-pub(crate) fn thread_amount() -> Option<NonZeroUsize> {
+pub(crate) fn thread_count() -> Option<NonZeroUsize> {
     let mut state = [0u32; 1296];
     let mut count: u32 = 0;
     let rc =

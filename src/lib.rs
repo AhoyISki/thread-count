@@ -1,9 +1,8 @@
 #![warn(clippy::pedantic)]
-
 use std::num::NonZeroUsize;
 
 #[cfg_attr(any(target_os = "macos", target_os = "ios"), path = "osx.rs")]
-#[cfg_attr(target_os = "unix", path = "unix.rs")]
+#[cfg_attr(target_os = "linux", path = "linux.rs")]
 #[cfg_attr(target_family = "windows", path = "windows.rs")]
 mod implementation;
 
@@ -41,9 +40,9 @@ mod tests {
         for i in 0..5 {
             std::thread::spawn(move || {
                 if i == 0 {
-                    assert_eq!(super::is_single_threaded(), true);
+                    assert!(super::is_single_threaded());
                 } else {
-                    assert_eq!(super::is_single_threaded(), false);
+                    assert!(!super::is_single_threaded());
                 }
             });
         }

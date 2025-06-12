@@ -1,10 +1,11 @@
 # thread-amount
 
-[![Crate Version](https://img.shields.io/crates/v/thread-amount)](https://crates.io/crates/thread-amount)
-[![Documentation](https://docs.rs/thread-amount/badge.svg)](https://docs.rs/thread-amount)
-[![License](https://img.shields.io/crates/l/thread-amount.svg)](./LICENSE-APACHE)
-[![Continuous Delivery](https://github.com/devtomio/thread-amount/actions/workflows/continuous-delivery.yml/badge.svg)](https://github.com/devtomio/thread-amount/actions/workflows/continuous-delivery.yml)
-[![Continuous Integration](https://github.com/devtomio/thread-amount/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/devtomio/thread-amount/actions/workflows/continuous-integration.yml)
+This is a fork of [`thread-amount`](https://github.com/jzeuzs/thread-amount), since
+that crate is archived and no longer works.
+
+[![Crate Version](https://img.shields.io/crates/v/thread-count)](https://crates.io/crates/thread-count)
+[![Documentation](https://docs.rs/thread-count/badge.svg)](https://docs.rs/thread-count)
+[![License](https://img.shields.io/crates/l/thread-count.svg)](./LICENSE-APACHE)
 
 **Get the amount of threads in the current process**
 
